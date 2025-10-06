@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <Button
+            android:id="@+id/btn_activity_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线性布局演示"/>
+        <Button
+            android:id="@+id/btn_activity_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="表格布局演示"/>
+        <Button
+            android:id="@+id/btn_activity_constraint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="约束布局1演示"/>
+        <Button
+            android:id="@+id/btn_activity_constraint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="约束布局2演示"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

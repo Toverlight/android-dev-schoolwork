@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <!-- 顶栏 -->
+    <TableRow
+        android:background="#959396"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:text="Hello TableLayout"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="24dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+    </TableRow>
+    <!-- 主体 -->
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="Open..."
+            android:paddingStart="20dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="Ctrl-O"
+            android:paddingEnd="2dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="Save..."
+            android:paddingStart="20dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="Ctrl-S"
+            android:paddingEnd="2dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="Save As..."
+            android:paddingStart="20dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="Ctrl-Shift-S"
+            android:paddingEnd="2dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+    <TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="X   Import..."
+            android:paddingStart="2dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="X   Export..."
+            android:paddingStart="2dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="Ctrl-E"
+            android:paddingEnd="2dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+    <TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:text="Quit"
+            android:paddingStart="20dp"
+            android:textColor="@color/gray"/>
+    </TableRow>
+</TableLayout>
