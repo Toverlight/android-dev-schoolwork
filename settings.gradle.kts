@@ -28,3 +28,4 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidDevSy"
 include(":sy1")
 include(":sy2-layout")
+include(":sy3-listview")
