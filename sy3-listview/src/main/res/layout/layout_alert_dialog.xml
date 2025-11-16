@@ -2,14 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="300dp"
-    android:layout_height="260dp">
+    android:layout_height="wrap_content"> <!-- 改为 wrap_content 更灵活 -->
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="60dp"
         android:text="ANDROID APP"
-        android:textAlignment="center"
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -19,43 +17,48 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
         <EditText
+            android:id="@+id/et_username"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Username"
-            android:layout_height="0dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"/>
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp" />
+
         <EditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Password"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_height="50dp"
+        android:orientation="horizontal">
         <Button
+            android:id="@+id/btn_cancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@drawable/button_bg"
             android:layout_weight="1"
             android:text="Cancel"/>
         <Button
+            android:id="@+id/btn_signin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@drawable/button_bg"
